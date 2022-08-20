@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer;
+
+        strArray = s.split("");
+
+        if (s.length % 2 == 1) {
+          let num = Math.ceil(s.length / 2);
+          answer = strArray[num];
+        } else {
+          let num = Math.ceil(s.length / 2);
+          answer = strArray[num - 1] + strArray[num];
+        }
+
+        return answer;
+      }
+      console.log(solution("study"));
+    </script>
+  </body>
+</html>
