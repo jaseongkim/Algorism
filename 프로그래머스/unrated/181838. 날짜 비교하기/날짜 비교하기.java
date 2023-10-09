@@ -16,8 +16,6 @@ class Solution {
             answer = 0;
         }
         
-        
-        
         return answer;
     }
 }
